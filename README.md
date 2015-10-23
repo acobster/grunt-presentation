@@ -8,11 +8,8 @@ The **basic setup** is for authoring presentations only. The **full setup** give
 
 ### Basic setup
 
-The core of reveal.js is very easy to install. You'll simply need to download a copy of this repository and open the index.html file directly in your browser.g
 
-1. Download a copy of reveal.js from <https://github.com/hakimel/reveal.js/archive/master.zip>
-
-2. Unzip and replace the example contents in index.html with your own
+1. Download this repo as a .zip
 
 3. Open index.html in a browser to view it
 
@@ -27,7 +24,7 @@ Some reveal.js features, like external markdown, require that presentations run 
 
 4. Clone the reveal.js repository  
 ```
-$ git clone git@github.com:hakimel/reveal.js.git
+$ git clone git@github.com:acobster/grunt-presentation.git
 ```
 
 5. Install dependencies  
