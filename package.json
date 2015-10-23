@@ -1,0 +1,34 @@
+{
+  "name": "grunt-presentation",
+  "title": "Grunt Presentation",
+  "description": "Learn how to use Grunt, the powerful task runner based on Node JS, to automate chunks of your development workflow. Use Grunt plugins to automatically manage dependencies, run unit tests, minify assets, generate documentation, and lots more with just a few small files you can track in Git.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Coby Tamayo"
+  },
+  "engines": {
+    "node": "~0.8.0"
+  },
+  "scripts": {
+    "test": "grunt jshint",
+    "start": ""
+  },
+  "dependencies": {
+    "underscore": "~1.3.3",
+    "express": "~2.5.9",
+    "mustache": "~0.4.0",
+    "socket.io": "~0.9.13"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-concat": "~0.5.1",
+    "grunt-contrib-connect": "~0.2.0",
+    "grunt-contrib-cssmin": "~0.4.1",
+    "grunt-contrib-jshint": "~0.2.0",
+    "grunt-contrib-sass": "~0.2.2",
+    "grunt-contrib-uglify": "~0.1.1",
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt-zip": "~0.7.0",
+    "node-sass": "^3.3.3"
+  }
+}
