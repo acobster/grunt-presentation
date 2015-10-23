@@ -110,6 +110,8 @@ module.exports = function(grunt) {
 					'header.html',
 					'slides/intro.html',
 					'slides/what-is-grunt.html',
+					'slides/what-it-does.html',
+					'slides/how-it-works.html',
 					'footer.html'
 				],
 				dest: 'index.html'

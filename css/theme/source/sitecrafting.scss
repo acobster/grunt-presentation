@@ -75,21 +75,20 @@ html * {
 	rendering-intent: auto;
 }
 
-// Solarized colors
-$base03:    #002b36;
+$base03:    #111;
 $base02:    #073642;
 $base01:    #586e75;
 $base00:    #657b83;
 $base0:     #839496;
 $base1:     #93a1a1;
-$base2:     #eee8d5;
+$base2:     #FFF;
 $base3:     #fdf6e3;
 $yellow:    #b58900;
 $orange:    #cb4b16;
 $red:       #dc322f;
 $magenta:   #d33682;
 $violet:    #6c71c4;
-$blue:      #268bd2;
+$blue:      #4eadeb;
 $cyan:      #2aa198;
 $green:     #859900;
 
@@ -102,6 +101,48 @@ $linkColor: $blue;
 $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: $magenta;
 
+// Background generator
+@mixin bodyBackground() {
+	@include radial-gradient( $backgroundColor, lighten($backgroundColor, 20%) );
+	background-image: url('/img/sitecrafting.png');
+	background-repeat: no-repeat;
+	background-position: 95% 5%;
+	background-size: 200px 200px;
+}
+
+.reveal {
+	.intro {
+		text-align: left;
+	}
+
+	h1 {
+		font-size: 2em;
+
+		span {
+			display: block;
+			line-height: 1.2;
+			font-size: 3em;
+		}
+	}
+
+	h5 {
+		font-size: 0.8em;
+	}
+
+	img.bg {
+		float: right;
+		right: 0;
+		position: absolute;
+		margin: auto;
+		border: none;
+		background: none;
+		opacity: 0.3;
+	}
+
+	code {
+		color: $blue;
+	}
+}
 
 
 // Theme template ------------------------------
