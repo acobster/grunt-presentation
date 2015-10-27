@@ -36,47 +36,78 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-<section class="intro">
-	<img class="bg" src="/img/grunt.png">
-	<h1>Automating your development workflow with <span>Grunt</span></h1>
-	<p>
-		<small><a href="#">Coby Tamayo</a></small>
-	</p>
-</section>
+				<section class="intro">
+					<img class="bg" src="/img/grunt.png">
+					<h1>Automating your development workflow with <span>Grunt</span></h1>
+					<p>
+						<small><a href="#">Coby Tamayo</a></small>
+					</p>
+				</section>
 
-<section>
-	<h2>What is Grunt?</h3>
+				<section>
+					<h2>What is Grunt?</h3>
 
-	<ul>
-		<li class="fragment fade-in">A general-purpose task runner for devs</li>
-		<li class="fragment fade-in">Built on Node.js</li>
-	</ul>
-</section>
-<section>
-	<h2>What sort of tasks?</h3>
+					<ul>
+						<li class="fragment fade-in">In the beginning: <em>a task-based command line build tool for JavaScript projects</em></li>
+						<li class="fragment fade-in">Now: <em>The JavaScript Task Runner</em></li>
+						<li class="fragment fade-in">A general-purpose task runner for automating dev workflows</li>
+						<li class="fragment fade-in">Built on Node.js</li>
+					</ul>
+				</section>
 
-	<ul>
-		<li class="fragment fade-in">Well, anything...<span class="fragment fade-in">that can be automated</span></li>
-		<li class="fragment fade-in">
-			Plugin architecture:
-			<ul>
-				<li class="fragment fade-in">Download generic tasks with <code>npm</code></li>
-				<li class="fragment fade-in">Register tasks in <code>Gruntfile.js</code></li>
-				<li class="fragment fade-in">Configure tasks with <code>initConfig()</code></li>
-			</ul>
-		</li>
-	</ul>
-</section>
-<section>
-	<h2>How does it work?</h3>
+				<section>
+					<h2>What sort of tasks?</h3>
 
-	<ul>
-		<li class="fragment fade-in">Core tasks are Node.js plugins</li>
-		<li class="fragment fade-in">Declare dependencies in <code>package.json</code></li>
-		<li class="fragment fade-in">Install these plugins with <code>npm</code><br/>
-		<li class="fragment fade-in">Run them with <code>grunt</code></li>
-	</ul>
-</section>
+					<ul>
+						<li class="fragment fade-in">Well, anything...<span class="fragment fade-in">that can be automated</span></li>
+						<li class="fragment fade-in">Compilation (CSS preprocessors, CoffeeScript)</li>
+						<li class="fragment fade-in">Concatenation</li>
+						<li class="fragment fade-in">Minification</li>
+						<li class="fragment fade-in">Unit testing</li>
+						<li class="fragment fade-in">Dependency management</li>
+						<li class="fragment fade-in">Documentation</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>How does it work?</h3>
+
+					<h3 class="fragment fade-in">Plugin architecture</h3>
+
+					<ol>
+						<li class="fragment fade-in">Declare dependencies</li>
+						<li class="fragment fade-in">Describe your workflow</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>How do I use it?</h3>
+
+					<ul>
+						<li class="fragment fade-in">
+							Grunt tasks are just Node.js packages!
+							<ul>
+								<li class="fragment fade-in">Declare them in <code>package.json</code></li>
+								<li class="fragment fade-in">Install them with <code>npm</code></li>
+							</ul>
+						</li>
+						<li class="fragment fade-in">
+							Describe workflow with Grunt
+							<ul>
+								<li class="fragment fade-in">Load/register tasks in <code>Gruntfile.js</code></li>
+								<li class="fragment fade-in">Configure tasks with <code>initConfig()</code></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Show me the code!</h2>
+				</section>
+
+				<section>
+					<h2>?></h2>
+				</section>
 
 			</div>
 

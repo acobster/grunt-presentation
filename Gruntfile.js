@@ -97,26 +97,8 @@ module.exports = function(grunt) {
 			theme: {
 				files: [ 'css/theme/source/*.scss', 'css/theme/template/*.scss' ],
 				tasks: 'themes'
-			},
-			html: {
-				files: [ 'header.html', 'footer.html', 'slides/*.html' ],
-				tasks: 'concat'
 			}
 		},
-
-		concat: {
-			slides: {
-				src: [
-					'header.html',
-					'slides/intro.html',
-					'slides/what-is-grunt.html',
-					'slides/what-it-does.html',
-					'slides/how-it-works.html',
-					'footer.html'
-				],
-				dest: 'index.html'
-			}
-		}
 
 	});
 
@@ -127,7 +109,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-contrib-watch' );
 	grunt.loadNpmTasks( 'grunt-contrib-sass' );
 	grunt.loadNpmTasks( 'grunt-contrib-connect' );
-	grunt.loadNpmTasks( 'grunt-contrib-concat' );
 	grunt.loadNpmTasks( 'grunt-zip' );
 
 	// Default task
